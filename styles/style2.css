@@ -1,0 +1,132 @@
+@import url("../assets/fonts/TTLakes/stylesheet.css");
+* {
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+  padding: 15px;
+  border-top: 1px solid #d9fff5;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  font-weight: 400;
+  color: #7e7e82;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+
+}
+.btn {
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  background-image: url(../assets/ic/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-box {
+  display: block;
+}
+.swiper--bgc {
+  background-color: rgba(246, 244, 244, 0.264);
+}
+.swiper-wrapper--margin {
+  margin-bottom: 40px;
+}
+.shadow {
+  position: absolute;
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  width: 24px;
+  height: 72px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper-slide--config {
+}
+.swiper-slide__content {
+  height: 72px;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.grid-box {
+  display: none;
+  padding: 24px 24px 50px 24px;
+}
+
+
+
+@media (min-width: 768px) {
+  .swiper-box {
+    display: none;
+  }
+  .swiper-slide--config {
+    flex-basis: 25%;
+  }
+  .grid-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 244, 244, 0.264);
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+  }
+  .show-more {
+    width: fit-content;
+    font-family: TT Lakes;
+    transition: all 0.5s;
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    background-image: url(../assets/ic/up.svg);
+    padding-left: 16px;
+    background-position: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 13px;
+  }
+  .swiper-slide--config:nth-child(n + 7) {
+    display: none;
+  }
+  .swiper-slide--config--showed {
+    display: block !important;
+  }
+
+.show-more--hide {
+  background-image: url(../assets/ic/down.svg);
+}
+
+}
+@media (min-width: 1120px) {
+  .swiper-slide--config {
+    flex-basis: 20%;
+  }
+  .swiper-slide--config:nth-child(7),
+  .swiper-slide--config:nth-child(8) {
+    display: block;
+  }
+  .swiper-slide--config:nth-child(n + 10) {
+    display: none;
+  }
+}
